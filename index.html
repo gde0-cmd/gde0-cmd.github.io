@@ -6,6 +6,155 @@
     <meta name="description" content="Loja GTA RP - Encontre os melhores itens para o seu jogo aqui!">
     <title>MORADA RJ</title>
     <link rel="stylesheet" href="css/index.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0; /* Alinha o header ao topo */
+    left: 0; /* Alinha o header à esquerda */
+    width: 100%; /* Largura total da página */
+    z-index: 1000; /* Garante que o header esteja acima de outros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil para destaque */
+}
+
+.header-title {
+    padding: 15px;
+    text-align: center;
+}
+
+.header-title h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px; /* Espaço para o header fixo */
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+        /* Main Content */
+        .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item {
+    background-color: gray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.item h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.item .price {
+    font-size: 18px;
+    color: #e74c3c;
+    margin: 10px 0;
+}
+
+.item .buy-button {
+    background-color: #3498db;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.item .buy-button:hover {
+    background-color: #2980b9;
+}
+
+.item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+    </style>
 </head>
 <body>
     <header>
