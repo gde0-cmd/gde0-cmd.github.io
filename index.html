@@ -3,183 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loja GTA RP - Encontre os melhores itens para o seu jogo aqui!">
-    <title>MORADA RJ</title>
-    
+    <title>Notícias de Xilogravura</title>
     <style>
+        /* Reset básico para margem e padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-* {
-    box-sizing: border-box;
-}
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
 
-/* Header */
-header {
-    background-color: #333;
-    color: #fff;
-    position: fixed; /* Fixa o header no topo da página */
-    top: 0; /* Alinha o header ao topo */
-    left: 0; /* Alinha o header à esquerda */
-    width: 100%; /* Largura total da página */
-    z-index: 1000; /* Garante que o header esteja acima de outros elementos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil para destaque */
-}
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
 
-.header-title {
-    padding: 15px;
-    text-align: center;
-}
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.header-title h1 {
-    margin: 0;
-    font-size: 24px;
-}
+        header h1 {
+            margin: 0;
+        }
 
-nav {
-    background-color: #444;
-    padding: 10px 0;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
+        nav ul li {
+            margin-left: 20px;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
- 
-/* perguntas */
-.perguntas {
-    background-color: rgba(2, 6, 211, 0.718);
-    border: 1px solid gray;
-    border-radius: 900px;
-    box-shadow: 0 0 10px rgb(85, 62, 255);
-    flex: 1;
-    min-width: 1300px;
-    max-width: 550px;
-    text-align: center;
-    margin-left: 100px;
-    margin-top: 50px;
-}
+        main {
+            padding: 2rem 0;
+        }
 
-/* catalogo */
-.hero {
-    background-image: url('https://via.placeholder.com/1920x600');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
-    margin-top: 60px; /* Espaço para o header fixo */
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
 
-.hero h2 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: bold;
-}
+        section {
+            margin-bottom: 2rem;
+        }
 
-.hero p {
-    font-size: 24px;
-    margin-top: 10px;
-}
+        article {
+            margin-bottom: 1.5rem;
+        }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
+        article h3 {
+            margin-bottom: 0.5rem;
+        }
 
-footer p {
-    margin: 0;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .hero h2 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .item {
-        max-width: 90%;
-    }
-}
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-title">
-            <h1>MORADA RJ</h1>
+        <div class="container">
+            <h1>Notícias de Xilogravura</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#noticias">Notícias</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#artistas">Artistas</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="carros_vip.html">Carros VIPS</a></li>
-                <li><a href="contato.html">contato</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <div>
-        <div><br><br><br><br>
-            <IMG src=""width="1500" height="300"></IMG>
-        </div>
-    </div>
-    <div class="perguntas">
-        <H2>Onde encontro meu id para fazer compras</H2>
-    </div>
-    <div class="perguntas">
-        <H2>Onde encontro meu id para fazer compras</H2>
-    </div>
-    <div class="perguntas">
-        <H2>Onde encontro meu id para fazer compras</H2>
-    </div>
-    <div class="perguntas">
-        <H2>Onde encontro meu id para fazer compras</H2>
-    </div>
-    <div class="perguntas">
-        <H2>v</H2>
-    </div>
-   
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Bem-vindo ao site de Notícias de Xilogravura</h2>
+                <p>Acompanhe as últimas notícias, eventos e novidades sobre xilogravura.</p>
+            </div>
+        </section>
+
+        <section id="noticias">
+            <div class="container">
+                <h2>Notícias Recentes</h2>
+                <article>
+                    <h3>Novos Trabalhos de Xilogravura em Exibição</h3>
+                    <p>Publicado em 20 de agosto de 2024</p>
+                    <p>Confira os novos trabalhos de xilogravura exibidos na Galeria Nacional. Artistas locais mostram suas mais recentes criações.</p>
+                </article>
+                <article>
+                    <h3>Workshop de Xilogravura em Setembro</h3>
+                    <p>Publicado em 15 de agosto de 2024</p>
+                    <p>Participe do workshop de xilogravura que acontecerá no próximo mês. Inscreva-se para aprender técnicas tradicionais e modernas.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre</h2>
+                <p>Este site é dedicado a promover e divulgar a arte da xilogravura. Aqui você encontrará notícias, eventos e informações sobre artistas dessa técnica tradicional.</p>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Loja GTA RP. Todos os direitos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Notícias de Xilogravura. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>
