@@ -1,39 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notícias</title>
+    <title>Spallanzani e Pasteur</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.scientist {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+.scientist img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+        
+    </style>
 </head>
 <body>
     <header>
-        <h1>Joenal Chaluppe</h1>
-        <nav>
-            <ul>
-                <li><a href="#noticias">Notícias</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <h1>Contribuições de Spallanzani e Pasteur</h1>
+        <p>Dois pioneiros da microbiologia</p>
     </header>
 
-    <section id="noticias">
-        <article>
-            <h2>Título da Notícia 1</h2>
-            <p>Resumo da notícia 1...</p>
-        </article>
+    <section class="container">
+        <div class="scientist">
+            <h2>Lazzaro Spallanzani (1729-1799)</h2>
+            <img src="URL_DA_IMAGEM_SPALLANZANI" alt="Lazzaro Spallanzani">
+            <p>
+                Lazzaro Spallanzani foi um biólogo e fisiologista italiano que realizou experimentos importantes sobre a geração espontânea. Ele demonstrou que micro-organismos não surgem espontaneamente, mas sim por meio de contaminação do ar, contestando as ideias de que seres vivos poderiam aparecer em matéria não viva sem uma fonte externa.
+            </p>
+            <p>
+                Em 1768, Spallanzani ferveu caldos nutritivos em frascos vedados e observou que eles permaneciam livres de vida até serem expostos ao ar, sugerindo que a vida microbiana vinha de fora e não surgia espontaneamente.
+            </p>
+        </div>
 
-        <article>
-            <h2>Título da Notícia 2</h2>
-            <p>Resumo da notícia 2...</p>
-        </article>
+        <div class="scientist">
+            <h2>Louis Pasteur (1822-1895)</h2>
+            <img src="URL_DA_IMAGEM_PASTEUR" alt="Louis Pasteur">
+            <p>
+                Louis Pasteur foi um cientista francês que revolucionou a microbiologia e a medicina com suas descobertas. Ele demonstrou que a fermentação e a deterioração de alimentos eram causadas por micro-organismos, e desenvolveu o processo de pasteurização, utilizado para matar germes em líquidos como o leite.
+            </p>
+            <p>
+                Pasteur também refutou a teoria da geração espontânea com seu famoso experimento do pescoço de cisne em 1859, onde mostrou que o caldo nutritivo mantido em frascos com pescoços alongados, que impediam a entrada de poeira, permanecia estéril.
+            </p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Portal de Notícias</p>
+        <p>&copy; 2024 - Informações sobre Spallanzani e Pasteur</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
