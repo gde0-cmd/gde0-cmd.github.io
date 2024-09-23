@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spallanzani e Pasteur</title>
+    <title>Contribuições de Spallanzani e Pasteur</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e0f7fa;
+            color: #333;
         }
 
         header {
-            background-color: #4CAF50;
+            background-color: #00796b;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 18px;
         }
 
         .container {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
-            margin: 20px;
+            margin: 30px;
+            gap: 20px;
         }
 
         .scientist {
             background-color: white;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             width: 45%;
-            margin-bottom: 20px;
+            text-align: center;
         }
 
         .scientist img {
@@ -42,27 +56,42 @@
             margin-bottom: 15px;
         }
 
+        .extra-section {
+            background-color: white;
+            text-align: left;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 20px 30px;
+        }
+
+        .extra-section h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
         footer {
-            background-color: #333;
+            background-color: #004d40;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-        .extra-section {
-            text-align: center;
-            margin: 20px;
             padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-top: 40px;
         }
 
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+            .scientist {
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Contribuições de Spallanzani e Pasteur</h1>
@@ -72,29 +101,40 @@
     <section class="container">
         <div class="scientist">
             <h2>Lazzaro Spallanzani (1729-1799)</h2>
-            <img src="URL_DA_IMAGEM_SPALLANZANI" alt="Lazzaro Spallanzani">
-            <p>Spallanzani demonstrou que micro-organismos não surgem espontaneamente, contestando teorias anteriores.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Lazzaro_Spallanzani.jpg" alt="Lazzaro Spallanzani">
+            <p>Spallanzani, um biólogo italiano, desafiou a teoria da geração espontânea ao demonstrar que micro-organismos não surgem de maneira espontânea em caldos nutritivos fervidos.</p>
         </div>
 
         <div class="scientist">
             <h2>Louis Pasteur (1822-1895)</h2>
-            <img src="URL_DA_IMAGEM_PASTEUR" alt="Louis Pasteur">
-            <p>Pasteur provou que micro-organismos causam fermentação e criou o processo de pasteurização.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Louis_Pasteur.jpg" alt="Louis Pasteur">
+            <p>Pasteur, cientista francês, provou que micro-organismos presentes no ar são os responsáveis pela fermentação e desenvolveu o processo de pasteurização para preservar alimentos.</p>
         </div>
     </section>
 
     <section class="extra-section">
-        <h2>Experimentos Famosos</h2>
-        <p>Spallanzani ferveu caldos para provar que a vida não surge espontaneamente. Pasteur, com seu experimento do pescoço de cisne, consolidou essa ideia ao demonstrar que o ar carrega micro-organismos.</p>
+        <h2>Experimentos Famosos de Spallanzani</h2>
+        <p>Em um experimento pioneiro, Spallanzani ferveu caldos nutritivos e os selou hermeticamente. Ele demonstrou que a ausência de micro-organismos era resultado da exclusão do ar e que não havia surgimento espontâneo de vida.</p>
     </section>
 
     <section class="extra-section">
-        <h2>Impacto na Ciência</h2>
-        <p>As descobertas de Spallanzani e Pasteur abriram caminho para os estudos de microbiologia e contribuíram para a criação de vacinas e técnicas de preservação de alimentos.</p>
+        <h2>Experimento do Pescoço de Cisne de Pasteur</h2>
+        <p>Pasteur utilizou frascos com gargalos longos e curvados em forma de pescoço de cisne para mostrar que, mesmo com a entrada de ar, micro-organismos não apareciam no caldo esterilizado, provando que eles não surgiam espontaneamente.</p>
+    </section>
+
+    <section class="extra-section">
+        <h2>Impacto das Descobertas de Spallanzani</h2>
+        <p>As pesquisas de Spallanzani lançaram as bases para o estudo da biogênese e para o entendimento de que a vida se origina apenas de vida preexistente, desafiando crenças seculares.</p>
+    </section>
+
+    <section class="extra-section">
+        <h2>Legado de Pasteur na Ciência</h2>
+        <p>As descobertas de Pasteur impulsionaram avanços na medicina e na microbiologia, incluindo o desenvolvimento de vacinas e a pasteurização, fundamentais na preservação de alimentos e no combate a doenças infecciosas.</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 - Informações sobre Spallanzani e Pasteur</p>
+        <p>&copy; 2024 - Informações sobre Spallanzani e Pasteur. Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>
