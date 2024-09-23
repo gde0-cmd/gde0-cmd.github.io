@@ -4,83 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spallanzani e Pasteur</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-}
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
 
-.scientist {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 45%;
-}
+        .scientist {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 45%;
+            margin-bottom: 20px;
+        }
 
-.scientist img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
+        .scientist img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .extra-section {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Contribuições de Spallanzani e Pasteur</h1>
-        <p>Dois pioneiros da microbiologia</p>
+        <p>Pioneiros da microbiologia</p>
     </header>
 
     <section class="container">
         <div class="scientist">
             <h2>Lazzaro Spallanzani (1729-1799)</h2>
             <img src="URL_DA_IMAGEM_SPALLANZANI" alt="Lazzaro Spallanzani">
-            <p>
-                Lazzaro Spallanzani foi um biólogo e fisiologista italiano que realizou experimentos importantes sobre a geração espontânea. Ele demonstrou que micro-organismos não surgem espontaneamente, mas sim por meio de contaminação do ar, contestando as ideias de que seres vivos poderiam aparecer em matéria não viva sem uma fonte externa.
-            </p>
-            <p>
-                Em 1768, Spallanzani ferveu caldos nutritivos em frascos vedados e observou que eles permaneciam livres de vida até serem expostos ao ar, sugerindo que a vida microbiana vinha de fora e não surgia espontaneamente.
-            </p>
+            <p>Spallanzani demonstrou que micro-organismos não surgem espontaneamente, contestando teorias anteriores.</p>
         </div>
 
         <div class="scientist">
             <h2>Louis Pasteur (1822-1895)</h2>
             <img src="URL_DA_IMAGEM_PASTEUR" alt="Louis Pasteur">
-            <p>
-                Louis Pasteur foi um cientista francês que revolucionou a microbiologia e a medicina com suas descobertas. Ele demonstrou que a fermentação e a deterioração de alimentos eram causadas por micro-organismos, e desenvolveu o processo de pasteurização, utilizado para matar germes em líquidos como o leite.
-            </p>
-            <p>
-                Pasteur também refutou a teoria da geração espontânea com seu famoso experimento do pescoço de cisne em 1859, onde mostrou que o caldo nutritivo mantido em frascos com pescoços alongados, que impediam a entrada de poeira, permanecia estéril.
-            </p>
+            <p>Pasteur provou que micro-organismos causam fermentação e criou o processo de pasteurização.</p>
         </div>
+    </section>
+
+    <section class="extra-section">
+        <h2>Experimentos Famosos</h2>
+        <p>Spallanzani ferveu caldos para provar que a vida não surge espontaneamente. Pasteur, com seu experimento do pescoço de cisne, consolidou essa ideia ao demonstrar que o ar carrega micro-organismos.</p>
+    </section>
+
+    <section class="extra-section">
+        <h2>Impacto na Ciência</h2>
+        <p>As descobertas de Spallanzani e Pasteur abriram caminho para os estudos de microbiologia e contribuíram para a criação de vacinas e técnicas de preservação de alimentos.</p>
     </section>
 
     <footer>
