@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Vídeos</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,18 +14,21 @@
             padding: 0;
             background-color: gray;
         }
+
         header {
             background-color: black;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
+
         .container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             padding: 20px;
         }
+
         .video-card {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -31,42 +37,61 @@
             width: 300px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
+        .container .video-card {
+            flex: 1 1 calc(25% - 40px); /* 25% para até 4 vídeos por linha */
+            margin: 10px;
+        }
+
         .video-card img {
             max-width: 100%;
         }
+
         .video-title {
             font-size: 18px;
             margin: 10px 0;
         }
+
         .video-description {
             font-size: 14px;
             color: #555;
         }
     </style>
+
 </head>
+
 <body>
+
     <header>
         <h1>Catálogo de Vídeos</h1>
     </header>
 
     <div class="container">
         <div class="video-card">
-               <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="video-title"tente nao rir</div>
-            <div class="video-description">sei la o título ja fala.</div>
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">Tente não rir</div>
+            <div class="video-description">Sei lá, o título já fala.</div>
         </div>
-            <div class="video-card">
-               <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="video-title"tente nao rir</div>
-            <div class="video-description">sei la o título ja fala.</div>
-            </div>
-                <div class="video-card">
-               <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="video-title"tente nao rir</div>
-            <div class="video-description">sei la o título ja fala.</div>
-            </div>
-        
+
+        <div class="video-card">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">Tente não rir</div>
+            <div class="video-description">Sei lá, o título já fala.</div>
+        </div>
+
+        <div class="video-card">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">Tente não rir</div>
+            <div class="video-description">Sei lá, o título já fala.</div>
+        </div>
+
+        <div class="video-card">
+            <iframe width="300" height="200" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-title">Tente não rir</div>
+            <div class="video-description">Sei lá, o título já fala.</div>
         </div>
     </div>
+
 </body>
+
 </html>
