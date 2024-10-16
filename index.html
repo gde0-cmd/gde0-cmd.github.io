@@ -17,9 +17,12 @@ header {
     background-color: #1a1a1a; /* Cor de fundo escura */
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    position: sticky;
+    position: fixed; /* Fixa o header no topo */
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
+    transition: transform 0.3s ease; /* Transição suave para o desaparecimento */
 }
 
 .logo h1 {
@@ -62,6 +65,16 @@ nav ul li a:hover {
     color: #fff; /* Texto branco ao passar o mouse */
 }
 
+.toggle-button {
+    display: none; /* Oculta o botão inicialmente */
+    background-color: #ff6347; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     nav {
@@ -71,61 +84,20 @@ nav ul li a:hover {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Exibe opções em coluna */
         gap: 15px; /* Reduz o espaçamento entre itens no mobile */
+        display: none; /* Oculta as opções inicialmente */
     }
+
+    .toggle-button {
+        display: inline-block; /* Exibe o botão no mobile */
+    }
+}
+
+.hidden {
+    transform: translateY(-100%); /* Move o header para fora da tela */
 }
         
-
-nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #ff6347;
-    color: #fff;
-}
-
-/* Estilo Responsivo para Dispositivos Móveis */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    .logo h1 {
-        font-size: 1.5rem;
-    }
-}
-            
-
-        #hero {
-            padding: 50px 20px;
-        }
-        }
 
         body {
             font-family: Arial, sans-serif;
@@ -134,30 +106,7 @@ nav ul li a:hover {
             line-height: 1.6;
         }
 
-        header {
-            background-color: #444;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .logo h1 {
-            margin-bottom: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
+        
         #hero {
             background-color: #333;
             color: #fff;
@@ -327,11 +276,11 @@ nav ul li a:hover {
     </style>
 </head>
 <body>
-<header>
+<header id="header">
     <div class="logo">
         <h1>Arte Visual</h1>
     </div>
-    <nav>
+    <nav id="nav">
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#oportunidades">Oportunidades</a></li>
@@ -340,6 +289,7 @@ nav ul li a:hover {
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
+    <button id="toggleButton" class="toggle-button">Menu</button>
 </header>
 
     <section id="hero">
