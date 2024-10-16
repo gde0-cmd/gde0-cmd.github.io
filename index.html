@@ -13,29 +13,69 @@
             padding: 0;
             box-sizing: border-box;
         }
-        @media (max-width: 768px) {
-        .grid {
-            flex-direction: column;
-            align-items: center;
-        }
-            /* Estilo do Header */
 header {
-    background-color: #333;
+    background-color: #1a1a1a; /* Cor de fundo escura */
     padding: 20px 0;
-    position: sticky; /* Fica fixo no topo durante o scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar o header */
 }
 
 .logo h1 {
-    color: #fff;
+    font-size: 2.5rem;
+    color: #ff6347; /* Cor do logo em laranja */
+    font-weight: bold;
     text-transform: uppercase;
-    font-size: 2rem;
     letter-spacing: 2px;
-    margin: 0;
-    text-align: center;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif; /* Tipografia moderna */
+    display: inline-block;
 }
+
+nav {
+    display: inline-block; /* Para que logo e menu fiquem lado a lado */
+    float: right; /* Mantém o menu alinhado à direita */
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Mantém as opções do menu na horizontal */
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #f4f4f4; /* Cor do texto das opções */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347; /* Efeito hover com fundo laranja */
+    color: #fff; /* Texto branco ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px; /* Reduz o espaçamento entre itens no mobile */
+    }
+}
+        
 
 nav {
     display: flex;
