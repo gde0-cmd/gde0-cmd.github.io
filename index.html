@@ -1,91 +1,215 @@
-<!DOCTYPE html> 
-<html lang="pt-BR">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Vídeos</title>
-
+    <title>Mercado de Trabalho - Arte Visual</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: gray;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
         header {
-            background-color: black;
+            background-color: #444;
             color: #fff;
-            padding: 20px;
+            padding: 20px 0;
             text-align: center;
         }
 
-        .container {
+        .logo h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            padding: 20px;
+            gap: 20px;
         }
 
-        .video-card {
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #hero {
+            background-color: #333;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        #hero h2 {
+            margin-bottom: 10px;
+            font-size: 2.5rem;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+        }
+
+        #hero button {
             background-color: #fff;
-            border: 1px solid #ddd;
-            margin: 10px;
-            padding: 15px;
-            width: 500px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1rem;
         }
 
-        .container .video-card {
-            flex: 1 1 calc(25% - 40px); /* 25% para até 4 vídeos por linha */
-            margin: 10px;
+        section {
+            padding: 50px 20px;
         }
 
-        .video-card img {
-            max-width: 100%;
+        .container {
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .video-title {
-            font-size: 18px;
-            margin: 10px 0;
+        #sobre img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
         }
 
-        .video-description {
-            font-size: 14px;
-            color: #555;
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            margin-top: 10px;
         }
     </style>
-
 </head>
-
 <body>
-
     <header>
-        <h1>Catálogo de Vídeos</h1>
+        <div class="logo">
+            <h1>Arte Visual</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#oportunidades">Oportunidades</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="video-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SnCEz_qvA6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="video-title">Tente não rir</div>
-            <div class="video-description">Sei lá, o título já fala.</div>
-        </div>
+    <section id="hero">
+        <h2>Descubra o Mundo da Arte Visual</h2>
+        <p>Explore as oportunidades de carreira e o impacto da arte visual no mundo moderno.</p>
+        <button onclick="scrollToSection('#oportunidades')">Ver Oportunidades</button>
+    </section>
 
-        <div class="video-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OWbcBb_TZ6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="video-title">Tente não rir</div>
-            <div class="video-description">Sei lá, o título já fala.</div>
-        </div>
+    <section id="sobre" class="container">
+        <h2>O que é Arte Visual?</h2>
+        <p>A arte visual inclui uma ampla gama de formas de expressão artística, como pintura, escultura, fotografia, design gráfico, ilustração e muito mais. No mercado de trabalho, artistas visuais podem encontrar oportunidades em diversas indústrias, desde o entretenimento até a publicidade.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Exemplo de Arte Visual">
+    </section>
 
-        <div class="video-card">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/tlvX7NcDhZI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div class="video-title">Tente não rir</div>
-            <div class="video-description">Sei lá, o título já fala.</div>
+    <section id="oportunidades" class="container">
+        <h2>Oportunidades no Mercado</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Designer Gráfico</h3>
+                <p>Crie soluções visuais para empresas e marcas, desde logos até campanhas publicitárias.</p>
+            </div>
+            <div class="card">
+                <h3>Artista Digital</h3>
+                <p>Utilize ferramentas digitais para criar ilustrações, animações e peças interativas.</p>
+            </div>
+            <div class="card">
+                <h3>Ilustrador</h3>
+                <p>Desenhe e crie ilustrações para livros, revistas, sites e outras mídias.</p>
+            </div>
+            <div class="card">
+                <h3>Fotógrafo</h3>
+                <p>Capture imagens que comunicam ideias, eventos e emoções através da lente.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <section id="portfolio" class="container">
+        <h2>Portfólio de Artistas</h2>
+        <p>Veja algumas das obras incríveis criadas por artistas visuais ao redor do mundo.</p>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Obra 1">
+                <p>Obra 1 - Artista A</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Obra 2">
+                <p>Obra 2 - Artista B</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Obra 3">
+                <p>Obra 3 - Artista C</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container">
+        <h2>Blog</h2>
+        <p>Fique por dentro das últimas notícias, eventos e tendências no mundo da arte visual.</p>
+    </section>
+
+    <footer id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Email: contato@artevisual.com</p>
+        <p>Telefone: (11) 99999-9999</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
-
 </html>
