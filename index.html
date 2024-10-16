@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra o mundo da Arte Visual e explore oportunidades no mercado de trabalho. Designers gráficos, fotógrafos, artistas digitais e muito mais!">
+<meta name="keywords" content="Arte Visual, Mercado de Trabalho, Designer Gráfico, Fotógrafo, Artista Digital, Ilustrador">
+<meta name="robots" content="index, follow">
     <title>Mercado de Trabalho - Arte Visual</title>
     <style>
         * {
@@ -209,17 +212,26 @@
             </div>
         </div>
     </section>
-
     <section id="blog" class="container">
         <h2>Blog</h2>
         <p>Fique por dentro das últimas notícias, eventos e tendências no mundo da arte visual.</p>
     </section>
-
-    <footer id="contato">
-        <h2>Entre em Contato</h2>
-        <p>Email: contato@artevisual.com</p>
-        <p>Telefone: (11) 99999-9999</p>
-    </footer>
+    <section id="contato" class="container">
+    <h2>Fale Conosco</h2>
+    <form action="https://formspree.io/f/{seu-email}" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="_replyto" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    </section>
+    
 
     <script>
         function scrollToSection(sectionId) {
